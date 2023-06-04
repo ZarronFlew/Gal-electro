@@ -1,32 +1,71 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
-/******/ (function() { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
+// burger menu
+let burgerBtn = document.querySelector('.burger');
+let burgerMenu = document.querySelector('.mobile-menu');
+let body = document.querySelector('body');
+burgerBtn.addEventListener('click', () => {
+    if (burgerMenu.classList.contains('open')) {
+        burgerMenu.style.left = '100%';
+        burgerMenu.classList.remove('open');
+        body.style.overflow = 'auto';
+    } else {
+        burgerMenu.style.left = '0';
+        burgerMenu.classList.add('open');
+        body.style.overflow = 'hidden';
+    }
+})
 
-/***/ "./src/js/main.js":
-/*!************************!*\
-  !*** ./src/js/main.js ***!
-  \************************/
-/***/ (function() {
+let menu = document.querySelector('.nav');
+const headerNav = menu.querySelectorAll('[data-scroll]');
+headerNav.forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.getElementById(link.dataset.scroll);
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
 
-eval("// burger menu\r\nlet burgerBtn = document.querySelector('.burger');\r\nlet burgerMenu = document.querySelector('.mobile-menu');\r\nlet body = document.querySelector('body');\r\nburgerBtn.addEventListener('click', () => {\r\n    if (burgerMenu.classList.contains('open')) {\r\n        burgerMenu.style.left = '100%';\r\n        burgerMenu.classList.remove('open');\r\n        body.style.overflow = 'auto';\r\n    } else {\r\n        burgerMenu.style.left = '0';\r\n        burgerMenu.classList.add('open');\r\n        body.style.overflow = 'hidden';\r\n    }\r\n})\r\n\r\nconst navLinks = document.querySelectorAll('[data-scroll]');\r\nnavLinks.forEach(link => {\r\n    link.addEventListener('click', e => {\r\n        e.preventDefault();\r\n        if (burgerMenu.classList.contains('open')) {\r\n            burgerMenu.style.left = '100%';\r\n            burgerMenu.classList.remove('open');\r\n            body.style.overflow = 'auto';\r\n        } else {\r\n            burgerMenu.style.left = '0';\r\n            burgerMenu.classList.add('open');\r\n            body.style.overflow = 'hidden';\r\n        }\r\n        const target = document.getElementById(link.dataset.scroll);\r\n        if (target) {\r\n            target.scrollIntoView({ behavior: 'smooth' });\r\n        }\r\n    });\r\n});\r\n\r\n// faq\r\nlet faq = document.querySelector('.faq');\r\nlet text = faq.querySelectorAll('p');\r\n\r\ntext.forEach(item => {\r\n    item.parentElement.addEventListener('click', () => {\r\n        text.forEach(item => {\r\n            item.classList.remove('open');\r\n        })\r\n        item.classList.add('open');\r\n    })\r\n})\r\n\r\n// Swiper\r\n\r\nvar swiper = new Swiper('.swiper', {\r\n    slidesPerView: 3,\r\n    spaceBetween: 30,\r\n    navigation: {\r\n        nextEl: '.swiper-button-next',\r\n        prevEl: '.swiper-button-prev',\r\n    },\r\n});\n\n//# sourceURL=webpack://mygulp/./src/js/main.js?");
+const burgerNav = burgerMenu.querySelectorAll('[data-scroll]');
+burgerNav.forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        if (burgerMenu.classList.contains('open')) {
+            burgerMenu.style.left = '100%';
+            burgerMenu.classList.remove('open');
+            body.style.overflow = 'auto';
+        } else {
+            burgerMenu.style.left = '0';
+            burgerMenu.classList.add('open');
+            body.style.overflow = 'hidden';
+        }
+        const target = document.getElementById(link.dataset.scroll);
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
 
-/***/ })
+// faq
+let faq = document.querySelector('.faq');
+let text = faq.querySelectorAll('p');
 
-/******/ 	});
-/************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/js/main.js"]();
-/******/ 	
-/******/ })()
-;
+text.forEach(item => {
+    item.parentElement.addEventListener('click', () => {
+        text.forEach(item => {
+            item.classList.remove('open');
+        })
+        item.classList.add('open');
+    })
+})
+
+// Swiper
+
+var swiper = new Swiper('.swiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
