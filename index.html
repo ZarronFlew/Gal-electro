@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <!-- Styles -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
         <link rel="stylesheet" href="css/main.css">
         <title>SiteName</title>
     </head>
@@ -21,28 +22,40 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__list-item">
-                        <a href="#" class="nav__list-link">Каталог</a>
+                        <a href="#" data-scroll="section1" class="nav__list-link">Каталог</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="#" class="nav__list-link">О нас</a>
+                        <a href="#" data-scroll="section2" class="nav__list-link">О нас</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="#" class="nav__list-link">Выгода</a>
+                        <a href="#" data-scroll="section3" class="nav__list-link">Выгода</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="#" class="nav__list-link">Вопрос/ответ</a>
+                        <a href="#" data-scroll="section4" class="nav__list-link">Вопрос/ответ</a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="#" class="nav__list-link">Контакты</a>
+                        <a href="#" data-scroll="section5" class="nav__list-link">Контакты</a>
                     </li>
                 </ul>
             </nav>
             <div class="buttons">
                 <a href="#" class="btn">Оставить заявку</a>
             </div>
+            <div class="burger"></div>
         </div>
     </div>
 </header>
+
+<div class="mobile-menu">
+    <ul>
+        <li data-scroll="section1">Каталог</li>
+        <li data-scroll="section2">О нас</li>
+        <li data-scroll="section3">Выгода</li>
+        <li data-scroll="section4">Вопрос/ответ</li>
+        <li data-scroll="section5">Контакты</li>
+    </ul>
+    <a href="#" class="btn-trn">Оставить заявку</a>
+</div>
 
         <!-- Main content -->
         <main class="main">
@@ -55,6 +68,7 @@
                         <span>Электромобили</span><br>
                         под заказ и в наличии
                     </h1>
+                    <h2 class="subtitle">по Казахстану</h2>
                     <div class="buttons">
                         <a href="#" class="btn-trn">Оставить заявку</a>
                     </div>
@@ -131,7 +145,7 @@
                     </div>
                     <div class="card">
                         <div class="card-bg">
-                            <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car1"></picture>
+                            <picture><source srcset="./img/car7.webp" type="image/webp"><img src="./img/car7.png" alt="car7"></picture>
                         </div>
                         <div class="card-content">
                             <h2>Volkswagen ID 4 Cross Pure+</h2>
@@ -153,7 +167,7 @@
                     </div>
                     <div class="card">
                         <div class="card-bg">
-                            <picture><source srcset="./img/car3.webp" type="image/webp"><img src="./img/car3.png" alt="car3"></picture>
+                            <picture><source srcset="./img/car5.webp" type="image/webp"><img src="./img/car5.png" alt="car5"></picture>
                         </div>
                         <div class="card-content">
                             <h2>Volkswagend ID 4 Prime</h2>
@@ -164,21 +178,10 @@
                     </div>
                     <div class="card">
                         <div class="card-bg">
-                            <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car1"></picture>
+                            <picture><source srcset="./img/car8.webp" type="image/webp"><img src="./img/car8.png" alt="car8"></picture>
                         </div>
                         <div class="card-content">
                             <h2>Zeekr 001 you 2022</h2>
-                            <div class="buttons">
-                                <a href="#" class="btn-trn">Оставить заявку</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-bg">
-                            <picture><source srcset="./img/car2.webp" type="image/webp"><img src="./img/car2.png" alt="car2"></picture>
-                        </div>
-                        <div class="card-content">
-                            <h2>Zeekr X You 2023</h2>
                             <div class="buttons">
                                 <a href="#" class="btn-trn">Оставить заявку</a>
                             </div>
@@ -193,7 +196,7 @@
                 <div class="cards">
                     <div class="card">
                         <div class="card-bg">
-                            <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car1"></picture>
+                            <picture><source srcset="./img/car5.webp" type="image/webp"><img src="./img/car5.png" alt="car5"></picture>
                         </div>
                         <div class="card-content">
                             <h2>Honda M-NV Base 2022</h2>
@@ -204,7 +207,7 @@
                     </div>
                     <div class="card">
                         <div class="card-bg">
-                            <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car1"></picture>
+                            <picture><source srcset="./img/car4.webp" type="image/webp"><img src="./img/car4.png" alt="car4"></picture>
                         </div>
                         <div class="card-content">
                             <h2>Honda M-NV Base 2022</h2>
@@ -215,7 +218,7 @@
                     </div>
                     <div class="card">
                         <div class="card-bg">
-                            <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car1"></picture>
+                            <picture><source srcset="./img/car9.webp" type="image/webp"><img src="./img/car9.png" alt="car9"></picture>
                         </div>
                         <div class="card-content">
                             <h2>Honda M-NV Base 2022</h2>
@@ -226,7 +229,7 @@
                     </div>
                     <div class="card">
                         <div class="card-bg">
-                            <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car1"></picture>
+                            <picture><source srcset="./img/car2.webp" type="image/webp"><img src="./img/car2.png" alt="car2"></picture>
                         </div>
                         <div class="card-content">
                             <h2>Honda M-NV Base 2022</h2>
@@ -237,7 +240,7 @@
                     </div>
                     <div class="card">
                         <div class="card-bg">
-                            <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car1"></picture>
+                            <picture><source srcset="./img/car6.webp" type="image/webp"><img src="./img/car6.png" alt="car6"></picture>
                         </div>
                         <div class="card-content">
                             <h2>Honda M-NV Base 2022</h2>
@@ -249,7 +252,7 @@
                 </div>
             </div>
         </section>
-        <section class="whywe">
+        <section class="whywe" id="section3">
             <div class="whywe-bg"></div>
             <div class="container">
                 <h1>Почему выгодно покупать электромобиль?</h1>
@@ -352,204 +355,218 @@
                 </div>
             </div>
         </section>
-        <section class="catalog">
+        <section class="catalog" id="section1">
             <div class="container">
                 <div class="catalog-top">
                     <h1><span>Каталог</span> электромобилей</h1>
                     <div class="arrows">
-                        <div class="arrow arrow-back">
+                        <div class="arrow arrow-back swiper-button-prev">
                             <picture><source srcset="./img/arrow.svg" type="image/webp"><img src="./img/arrow.svg" alt="arrow"></picture>
                         </div>
-                        <div class="arrow arrow-forward">
+                        <div class="arrow arrow-forward swiper-button-next">
                             <picture><source srcset="./img/arrow.svg" type="image/webp"><img src="./img/arrow.svg" alt="arrow"></picture>
                         </div>
                     </div>
                 </div>
-                <div class="cards">
-                    <div class="card">
-                        <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car"></picture>
-                        <h2>Описание</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Odit, aliquam.
-                        </p>
-                        <h2>Характеристики</h2>
-                        <div class="stats">
-                            <ul>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                            </ul>
-                            <ul>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                            </ul>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car"></picture>
+                                <h2>Описание</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Odit, aliquam.
+                                </p>
+                                <h2>Характеристики</h2>
+                                <div class="stats">
+                                    <ul>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                    </ul>
+                                </div>
+                                <h2>Цена</h2>
+                                <h1 class="price">9,5 млн тг</h1>
+                                <p class="under-price">
+                                    <span>*</span>Цена указана под заказ
+                                </p>
+                                <div class="buttons">
+                                    <a href="#" class="btn-trn">Оставить заявку</a>
+                                </div>
+                            </div>
                         </div>
-                        <h2>Цена</h2>
-                        <h1 class="price">9,5 млн тг</h1>
-                        <p class="under-price">
-                            <span>*</span>Цена указана под заказ
-                        </p>
-                        <div class="buttons">
-                            <a href="#" class="btn-trn">Оставить заявку</a>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car"></picture>
+                                <h2>Описание</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Odit, aliquam.
+                                </p>
+                                <h2>Характеристики</h2>
+                                <div class="stats">
+                                    <ul>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                    </ul>
+                                </div>
+                                <h2>Цена</h2>
+                                <h1 class="price">9,5 млн тг</h1>
+                                <p class="under-price">
+                                    <span>*</span>Цена указана под заказ
+                                </p>
+                                <div class="buttons">
+                                    <a href="#" class="btn-trn">Оставить заявку</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car"></picture>
-                        <h2>Описание</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Odit, aliquam.
-                        </p>
-                        <h2>Характеристики</h2>
-                        <div class="stats">
-                            <ul>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                            </ul>
-                            <ul>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                            </ul>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car"></picture>
+                                <h2>Описание</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Odit, aliquam.
+                                </p>
+                                <h2>Характеристики</h2>
+                                <div class="stats">
+                                    <ul>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                    </ul>
+                                </div>
+                                <h2>Цена</h2>
+                                <h1 class="price">9,5 млн тг</h1>
+                                <p class="under-price">
+                                    <span>*</span>Цена указана под заказ
+                                </p>
+                                <div class="buttons">
+                                    <a href="#" class="btn-trn">Оставить заявку</a>
+                                </div>
+                            </div>
                         </div>
-                        <h2>Цена</h2>
-                        <h1 class="price">9,5 млн тг</h1>
-                        <p class="under-price">
-                            <span>*</span>Цена указана под заказ
-                        </p>
-                        <div class="buttons">
-                            <a href="#" class="btn-trn">Оставить заявку</a>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car"></picture>
+                                <h2>Описание</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Odit, aliquam.
+                                </p>
+                                <h2>Характеристики</h2>
+                                <div class="stats">
+                                    <ul>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                    </ul>
+                                </div>
+                                <h2>Цена</h2>
+                                <h1 class="price">9,5 млн тг</h1>
+                                <p class="under-price">
+                                    <span>*</span>Цена указана под заказ
+                                </p>
+                                <div class="buttons">
+                                    <a href="#" class="btn-trn">Оставить заявку</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car"></picture>
-                        <h2>Описание</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Odit, aliquam.
-                        </p>
-                        <h2>Характеристики</h2>
-                        <div class="stats">
-                            <ul>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                            </ul>
-                            <ul>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                            </ul>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car"></picture>
+                                <h2>Описание</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Odit, aliquam.
+                                </p>
+                                <h2>Характеристики</h2>
+                                <div class="stats">
+                                    <ul>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                    </ul>
+                                </div>
+                                <h2>Цена</h2>
+                                <h1 class="price">9,5 млн тг</h1>
+                                <p class="under-price">
+                                    <span>*</span>Цена указана под заказ
+                                </p>
+                                <div class="buttons">
+                                    <a href="#" class="btn-trn">Оставить заявку</a>
+                                </div>
+                            </div>
                         </div>
-                        <h2>Цена</h2>
-                        <h1 class="price">9,5 млн тг</h1>
-                        <p class="under-price">
-                            <span>*</span>Цена указана под заказ
-                        </p>
-                        <div class="buttons">
-                            <a href="#" class="btn-trn">Оставить заявку</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car"></picture>
-                        <h2>Описание</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Odit, aliquam.
-                        </p>
-                        <h2>Характеристики</h2>
-                        <div class="stats">
-                            <ul>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                            </ul>
-                            <ul>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                            </ul>
-                        </div>
-                        <h2>Цена</h2>
-                        <h1 class="price">9,5 млн тг</h1>
-                        <p class="under-price">
-                            <span>*</span>Цена указана под заказ
-                        </p>
-                        <div class="buttons">
-                            <a href="#" class="btn-trn">Оставить заявку</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car"></picture>
-                        <h2>Описание</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Odit, aliquam.
-                        </p>
-                        <h2>Характеристики</h2>
-                        <div class="stats">
-                            <ul>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                            </ul>
-                            <ul>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                            </ul>
-                        </div>
-                        <h2>Цена</h2>
-                        <h1 class="price">9,5 млн тг</h1>
-                        <p class="under-price">
-                            <span>*</span>Цена указана под заказ
-                        </p>
-                        <div class="buttons">
-                            <a href="#" class="btn-trn">Оставить заявку</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car"></picture>
-                        <h2>Описание</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Odit, aliquam.
-                        </p>
-                        <h2>Характеристики</h2>
-                        <div class="stats">
-                            <ul>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                            </ul>
-                            <ul>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                            </ul>
-                        </div>
-                        <h2>Цена</h2>
-                        <h1 class="price">9,5 млн тг</h1>
-                        <p class="under-price">
-                            <span>*</span>Цена указана под заказ
-                        </p>
-                        <div class="buttons">
-                            <a href="#" class="btn-trn">Оставить заявку</a>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <picture><source srcset="./img/car1.webp" type="image/webp"><img src="./img/car1.png" alt="car"></picture>
+                                <h2>Описание</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Odit, aliquam.
+                                </p>
+                                <h2>Характеристики</h2>
+                                <div class="stats">
+                                    <ul>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                    </ul>
+                                    <ul>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                        <li>Lorem, ipsum.</li>
+                                    </ul>
+                                </div>
+                                <h2>Цена</h2>
+                                <h1 class="price">9,5 млн тг</h1>
+                                <p class="under-price">
+                                    <span>*</span>Цена указана под заказ
+                                </p>
+                                <div class="buttons">
+                                    <a href="#" class="btn-trn">Оставить заявку</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -569,7 +586,7 @@
                 </div>
             </div>
         </section>
-        <section class="aboutus">
+        <section class="aboutus" id="section2">
             <div class="container">
                 <div class="aboutus-content">
                     <article>
@@ -593,7 +610,7 @@
                 </div>
             </div>
         </section>
-        <section class="faq">
+        <section class="faq" id="section4">
             <div class="container">
                 <div class="faq-top">
                     <h1>Вопрос/ответ</h1>
@@ -602,6 +619,20 @@
                     </div>
                 </div>
                 <div class="faq-content">
+                    <div class="card">
+                        <h2>
+                            Morem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Nunc vulputate libero et velit interdum, ac
+                            aliquet odio mattis.?
+                        </h2>
+                        <p class="open">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Fugit adipisci ratione placeat repudiandae
+                            fuga odit labore nam nesciunt, cum est aperiam,
+                            ipsum eveniet ipsa voluptatum possimus qui. Fugiat,
+                            error consequatur?
+                        </p>
+                    </div>
                     <div class="card">
                         <h2>
                             Morem ipsum dolor sit amet, consectetur adipiscing
@@ -622,6 +653,13 @@
                             elit. Nunc vulputate libero et velit interdum, ac
                             aliquet odio mattis.?
                         </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Fugit adipisci ratione placeat repudiandae
+                            fuga odit labore nam nesciunt, cum est aperiam,
+                            ipsum eveniet ipsa voluptatum possimus qui. Fugiat,
+                            error consequatur?
+                        </p>
                     </div>
                     <div class="card">
                         <h2>
@@ -629,6 +667,13 @@
                             elit. Nunc vulputate libero et velit interdum, ac
                             aliquet odio mattis.?
                         </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Fugit adipisci ratione placeat repudiandae
+                            fuga odit labore nam nesciunt, cum est aperiam,
+                            ipsum eveniet ipsa voluptatum possimus qui. Fugiat,
+                            error consequatur?
+                        </p>
                     </div>
                     <div class="card">
                         <h2>
@@ -636,6 +681,13 @@
                             elit. Nunc vulputate libero et velit interdum, ac
                             aliquet odio mattis.?
                         </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Fugit adipisci ratione placeat repudiandae
+                            fuga odit labore nam nesciunt, cum est aperiam,
+                            ipsum eveniet ipsa voluptatum possimus qui. Fugiat,
+                            error consequatur?
+                        </p>
                     </div>
                     <div class="card">
                         <h2>
@@ -643,18 +695,18 @@
                             elit. Nunc vulputate libero et velit interdum, ac
                             aliquet odio mattis.?
                         </h2>
-                    </div>
-                    <div class="card">
-                        <h2>
-                            Morem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nunc vulputate libero et velit interdum, ac
-                            aliquet odio mattis.?
-                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Fugit adipisci ratione placeat repudiandae
+                            fuga odit labore nam nesciunt, cum est aperiam,
+                            ipsum eveniet ipsa voluptatum possimus qui. Fugiat,
+                            error consequatur?
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contactus">
+        <section class="contactus" id="section5">
             <div class="container">
                 <div class="contactus-content">
                     <div class="contactus-contacts">
@@ -697,6 +749,7 @@
 </footer>
 
         <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
