@@ -1227,6 +1227,10 @@ h1 {
 .contactus {
   background: #fafafa;
   padding-top: 90px;
+  overflow: hidden;
+}
+
+.contactus .container {
   opacity: 0;
   -webkit-transform: translateX(50%);
   -ms-transform: translateX(50%);
@@ -1236,7 +1240,7 @@ h1 {
   transition: var(--sl-trans);
 }
 
-.contactus.element-show {
+.contactus. .container.element-show {
   opacity: 1;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
