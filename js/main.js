@@ -3,6 +3,7 @@ let burgerBtn = document.querySelector('.burger');
 let burgerMenu = document.querySelector('.mobile-menu');
 let body = document.querySelector('body');
 burgerBtn.addEventListener('click', () => {
+    burgerBtn.classList.toggle('open');
     if (burgerMenu.classList.contains('open')) {
         burgerMenu.style.left = '100%';
         burgerMenu.classList.remove('open');
@@ -48,24 +49,46 @@ burgerNav.forEach(link => {
 
 // faq
 let faq = document.querySelector('.faq');
-let text = faq.querySelectorAll('p');
+let card = faq.querySelectorAll('.card');
 
-text.forEach(item => {
-    item.parentElement.addEventListener('click', () => {
-        text.forEach(item => {
-            item.classList.remove('open');
-        })
-        item.classList.add('open');
+card.forEach(item => {
+    item.addEventListener('click', () => {
+        cardOpen(item)
     })
 })
+
+function cardOpen(card) {
+    let p = card.querySelector('p')
+    if (p.classList.contains('open')) {
+        openCloseCard(p)
+    } else {
+        closeAllCards(card);
+        openCloseCard(p)
+    }
+}
+function openCloseCard(p) {
+    p.classList.toggle('open')
+}
+function closeAllCards(card) {
+    let allParagraphs = card.parentElement.querySelectorAll('p')
+    allParagraphs.forEach(item => {
+        item.classList.remove('open')
+    })
+}
 
 // Swiper
 
 var swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 20,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-});
+    breakpoints: {
+        1140: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    }
+})
