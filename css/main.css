@@ -1689,7 +1689,7 @@ h1 {
   }
 
   .faq .card .open {
-    height: 150px;
+    height: 180px;
   }
 
 @supports (-webkit-appearance:none) {
